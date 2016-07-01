@@ -1,5 +1,8 @@
 # Project-1-game Simpsons' Tic-Tac-Toe
 
+# Technologies used
+- Jquery, JavaScript, HTML, Css. 
+
 # PWBAT
 - See who's turn it is.
 - Make thier move on the board. 
