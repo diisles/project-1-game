@@ -1,11 +1,12 @@
-# Project-1-game Simpsons' Tic-Tac-Toe
+# Project-1-game Simpsons' Memory Match
 
 # Technologies used
-- Jquery, JavaScript, HTML, Css. 
+- Jquery, JavaScript, HTML, Css.
 
 # PWBAT
-- See who's turn it is.
-- Make thier move on the board. 
-- see where they played as the head moves to position played. 
-- See who wins.
-- Tap button to play a new game. 
+- Player can click on the cards on the board.
+- The cards tap will then animate and flip around to show the face on the other side.
+- IF the two cards match faces then they get a "correct match" signal and the cards will disappear.
+- ELSE they will get a "no match" signal and the cards will flip back around for further play.
+- When all cards have been matched correctly they will get a "You Win" signal with the time it took them and amount of turns played in that round.
+-  
