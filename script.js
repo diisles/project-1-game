@@ -1,5 +1,7 @@
 console.log('script.js loaded!');
-var mycards = []
+var myCards = []
+var firstClick = "";
+var secondClick = "";
 
 var cards = document.getElementsByClassName("card")
 for (var i = 0; i < cards.length; i++) {
@@ -9,9 +11,50 @@ for (var i = 0; i < cards.length; i++) {
 // .addEventListener("click", cardFlip);
 
 function cardFlip() {
-    this.innerHTML = "YOU CLICKED ME!";
-    this.classList.add('images.png');
+  if(this.id == 'lisa1' || this.id == 'lisa2'){
+    // console.log('working')
+    this.classList.add('lisa');
+  }
+  else if(this.id == 'bart1' || this.id == 'bart2'){
+    this.classList.add('bart');
+  }
+  else if(this.id == 'burns1' || this.id == 'burns2'){
+    this.classList.add('burns');
+  }
+  else if(this.id == 'homer1' || this.id == 'homer2'){
+    this.classList.add('homer');
+  }
+  else if(this.id == 'marge1' || this.id == 'marge2'){
+    this.classList.add('marge');
+  }
+  else if(this.id == 'maggie1' || this.id == 'maggie2'){
+    this.classList.add('maggie');
+  }
+  if(firstClick === "") {
+    firstClick = this
+  } else {
+    secondClick = this
+  }
+  if(secondClick !== "") {
+    if(firstClick.classList[1] === secondClick.classList[1]) {
+        myCards.push(firstClick.classList[1])
+        firstClick = ""
+        secondClick = ""
+    } else {
+      setTimeout(function() {
+        firstClick.classList = ["card"]
+        secondClick.classList = ["card"]
+        firstClick = ""
+        secondClick = ""
+      }, 1000)
+
+    }
+  }
 }
+
+
+
+
   var faces = []; //array to store card images
       faces[0] = 'images-1.jpg';
       faces[1] = 'images-1.png';

@@ -30,6 +30,44 @@ p {
       margin: 20px;
 }
 
-.images {
-  background-image: images.png ;
+.lisa {
+  background-image:url('https://vq.vassar.edu/issues/2002/02/images/features/lisa-simpson_sax.jpg') ;
+	background-size: 150px 200px;
+		background-repeat: no-repeat;
+
+	}
+
+.burns {
+	background-image: url('http://djphillipfromgalt.hot1035radio.com/images/2013/10/MrBurns.bmp');
+	background-size: 150px 200px;
+		background-repeat: no-repeat;
+}
+
+.homer{
+	background-image: url('http://smackonyou.com/homer-simpson-310.jpg');
+	background-size: 150px 200px;
+		background-repeat: no-repeat;
+}
+
+.marge{
+	background-image: url('http://www.awesome80s.com/awesome80s/tv/images/SimpsonsMarge(200).gif');
+	background-size: 150px 200px;
+		background-repeat: no-repeat;
+}
+
+.bart{
+	background-image: url('http://cs840.vk.me/u124778992/a_1732357b.jpg');
+	background-size: 150px 200px;
+		background-repeat: no-repeat;
+}
+
+.maggie{
+	background-image: url('http://www.comicbookreligion.com/img/m/a/Maggie_Simpson.jpg');
+	background-size: 150px 200px;
+    background-repeat: no-repeat;
+}
+
+.yellow{
+	background-color: yellow;
+}
 }
