@@ -11,6 +11,9 @@ for (var i = 0; i < cards.length; i++) {
 // .addEventListener("click", cardFlip);
 
 function cardFlip() {
+  //this first if statement below fixes the three click fast issue that was allowing three cards to be clicked before the settimeout refliped the cards.
+if(secondClick === ""){
+
   if(this.id == 'lisa1' || this.id == 'lisa2'){
     // console.log('working')
     this.classList.add('lisa');
@@ -30,14 +33,18 @@ function cardFlip() {
   else if(this.id == 'maggie1' || this.id == 'maggie2'){
     this.classList.add('maggie');
   }
+
   if(firstClick === "") {
     firstClick = this
   } else {
     secondClick = this
   }
+  }
   if(secondClick !== "") {
     if(firstClick.classList[1] === secondClick.classList[1]) {
         myCards.push(firstClick.classList[1])
+        firstClick.removeEventListener("click", cardFlip)
+        secondClick.removeEventListener("click", cardFlip)
         firstClick = ""
         secondClick = ""
     } else {
