@@ -55,10 +55,19 @@ if(secondClick === ""){
         secondClick = ""
       }, 1000)
 
+      
+
     }
   }
+    checkForWin();
 }
 
+function checkForWin(){
+  if(myCards.length === 6){
+    alert("You Win!")
+  }
+
+}
 
 
 
