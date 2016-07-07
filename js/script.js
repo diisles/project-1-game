@@ -9,7 +9,9 @@ $('#gameStartButton').click(function() {
     $('html,body').animate({
       scrollTop: ($('#board').offset().top)
     }, 500);
+    addClick();
 });
+$('#newGameButton').click(resetBoard);
 
 var myCards = []
 var firstClick = "";
@@ -17,14 +19,15 @@ var secondClick = "";
 
 var $cards = $(".card")
     // var $cards = $('.card')
-for (var i = 0; i < $cards.length; i++) {
+var addClick = function() {
+   for (var i = 0; i < $cards.length; i++) {
     $cards.eq(i).click(cardFlip)
+  }
 }
 
 // .addEventListener("click", cardFlip);
 
 function cardFlip() {
-  console.log(this);
     //this first if statement below fixes the three click fast issue that was allowing three cards to be clicked before the settimeout refliped the cards.
     if (secondClick === "") {
 
@@ -62,7 +65,7 @@ function cardFlip() {
                 secondClick.classList = ["card"]
                 firstClick = ""
                 secondClick = ""
-            }, 1000)
+            }, 500)
 
 
 
@@ -74,8 +77,6 @@ function cardFlip() {
 function checkForWin() {
     if (myCards.length === 6) {
         alert("You Win!")
-        $('#startButtonDiv').show();
-        $('#board').hide();
     }
 }
 // The Fisher-Yates Shuffle
@@ -100,5 +101,8 @@ function resetBoard() {
   // console.log("game shuffled");
   for(var i = 0; i < idsArray.length; i++) {
     $cards[i].id = idsArray[i];
+    $cards[i].classList = ['card']
   }
+  myCards=[]
+  addClick();
 }
