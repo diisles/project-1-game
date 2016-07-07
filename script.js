@@ -55,7 +55,7 @@ if(secondClick === ""){
         secondClick = ""
       }, 1000)
 
-      
+
 
     }
   }
@@ -65,6 +65,20 @@ if(secondClick === ""){
 function checkForWin(){
   if(myCards.length === 6){
     alert("You Win!")
+  }
+//The Fisher-Yates Shuffle
+
+  function shuffle(myCards) {
+    var i = 0
+      , j = 0
+      , temp = null
+
+    for (i = myCards.length - 1; i > 0; i -= 1) {
+      j = Math.floor(Math.random() * (i + 1))
+      temp = myCards[i]
+      myCards[i] = myCards[j]
+      myCards[j] = temp
+     }
   }
 
 }
