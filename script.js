@@ -1,9 +1,17 @@
 console.log('script.js loaded!');
+
+$('#gameStartButton').click(function(){
+  $('#startButtonDiv').hide();
+  $('#board').show();
+  $('H2').hide();
+});
+
 var myCards = []
 var firstClick = "";
 var secondClick = "";
 
 var cards = document.getElementsByClassName("card")
+// var $cards = $('.card')
 for (var i = 0; i < cards.length; i++) {
   cards[i].addEventListener('click',cardFlip)
 }

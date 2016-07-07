@@ -8,17 +8,22 @@
 
 
 <body>
+
    <nav class="clearfix">
 
-    <a href="#"><button type="button">Instructions</button></a>
-    <a href="#"><button type="button">New Game</button></a>
+    <!-- <a href="#"><button type="button">Instructions</button></a> -->
+    <a href="#"><button id="newGameButton" type="button">New Game</button></a>
   </nav>
 	<h1>The Simpsons Memory Match</h1>
 
 	<h2>Instructions</h2>
 	<p>The Simpsons have lost their heads again! Help Homer and the gang find themsleves by turning over two heads of the same image. Continuing matching all the cards correctly to win the game. Try to best your previous times and amount of moves played in each additional game. Good Luck!   </p>
 
+<div id="startButtonDiv">
+  <button id="gameStartButton">start game</button>
+</div>
 
+<div id="board">
   <div class="board">
 	 <div class="card" id="homer1"></div>
 	 <div class="card" id="maggie1"></div>
@@ -33,6 +38,7 @@
    <div class="card" id="burns1"></div>
    <div class="card" id="bart2"></div>
   </div>
+</div>
 
   <span class="name"></span>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
