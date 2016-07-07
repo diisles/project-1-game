@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Memory Game</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
 
 
 <body>
 
-   <nav class="clearfix">
+    <nav class="clearfix">
 
-    <!-- <a href="#"><button type="button">Instructions</button></a> -->
-    <a href="#"><button id="newGameButton" type="button">New Game</button></a>
-  </nav>
-	<h1>The Simpsons Memory Match</h1>
+        <!-- <a href="#"><button type="button">Instructions</button></a> -->
+        <a href="#"><button id="newGameButton" type="button" value="refresh page" onClick="window.location.reload()">New Game</button></a>
+    </nav>
+    <h1>The Simpsons Memory Match</h1>
 
-	<h2>Instructions</h2>
-	<p>The Simpsons have lost their heads again! Help Homer and the gang find themsleves by turning over two heads of the same image. Continuing matching all the cards correctly to win the game. Try to best your previous times and amount of moves played in each additional game. Good Luck!   </p>
+    <h2>Instructions</h2>
+    <p>The Simpsons have lost their heads again! Help Homer and the gang find themsleves by turning over two heads of the same image. Continuing matching all the cards correctly to win the game. Try to best your previous times and amount of moves played in each additional game. Good Luck! </p>
 
-<div id="startButtonDiv">
-  <button id="gameStartButton">start game</button>
-</div>
+    <div id="startButtonDiv" style="background-image: url(http://vignette1.wikia.nocookie.net/peanuts/images/8/81/Simpsons-logo-1-.jpg/revision/latest?cb=20120906014104);height:450px; width:680px;">
+        <button id="gameStartButton">Start New Game</button>
+    </div>
 
-<div id="board">
-  <div class="board">
-	 <div class="card" id="homer1"></div>
-	 <div class="card" id="maggie1"></div>
-	 <div class="card" id="marge1"></div>
-	 <div class="card" id="lisa2"></div>
-   <div class="card" id="bart1"></div>
-   <div class="card" id="burns2"></div>
-   <div class="card" id="homer2"></div>
-   <div class="card" id="maggie2"></div>
-   <div class="card" id="lisa1"></div>
-   <div class="card" id="marge2"></div>
-   <div class="card" id="burns1"></div>
-   <div class="card" id="bart2"></div>
-  </div>
-</div>
+    <div id="board">
+        <div class="board">
+            <div class="card" id="homer1"></div>
+            <div class="card" id="maggie1"></div>
+            <div class="card" id="marge1"></div>
+            <div class="card" id="lisa2"></div>
+            <div class="card" id="bart1"></div>
+            <div class="card" id="burns2"></div>
+            <div class="card" id="homer2"></div>
+            <div class="card" id="maggie2"></div>
+            <div class="card" id="lisa1"></div>
+            <div class="card" id="marge2"></div>
+            <div class="card" id="burns1"></div>
+            <div class="card" id="bart2"></div>
+        </div>
+    </div>
 
-  <span class="name"></span>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="./script.js"></script>
+
+    <span class="name"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

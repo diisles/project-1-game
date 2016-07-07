@@ -1,0 +1,101 @@
+#startButtonDiv {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#gameStartButton {
+    margin: auto;
+}
+
+
+
+h1 {
+    color: rgb(2, 132, 130);
+    text-align: center;
+}
+h2 {
+    color: #FFD700;
+    text-align: center;
+}
+
+p {
+    text-align: center
+}
+
+#newGameButton {
+    background-color: #4CAF50;
+		 /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#board {
+        display: none;
+    }
+
+    .board {
+        width: 57%;
+        height: 50%;
+        display: inline-block;
+
+        clear: left;
+        margin: 2%;
+        position: relative;
+        left: 21%;
+    }
+    .card {
+        height: 200px;
+        width: 150px;
+        border: 1px solid black;
+        background-color: yellow;
+        float: left;
+        margin: 10px;
+    }
+
+    .lisa {
+        background-image: url('https://vq.vassar.edu/issues/2002/02/images/features/lisa-simpson_sax.jpg');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+
+    }
+
+    .burns {
+        background-image: url('http://djphillipfromgalt.hot1035radio.com/images/2013/10/MrBurns.bmp');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+    }
+
+    .homer {
+        background-image: url('http://smackonyou.com/homer-simpson-310.jpg');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+    }
+
+    .marge {
+        background-image: url('http://www.awesome80s.com/awesome80s/tv/images/SimpsonsMarge(200).gif');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+    }
+
+    .bart {
+        background-image: url('http://cs840.vk.me/u124778992/a_1732357b.jpg');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+    }
+
+    .maggie {
+        background-image: url('http://www.comicbookreligion.com/img/m/a/Maggie_Simpson.jpg');
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+    }
+
+
+}
+}
