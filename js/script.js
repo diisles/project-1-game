@@ -1,7 +1,7 @@
 console.log('script.js loaded!');
 
+$('#newGameButton').hide()
 $('#gameStartButton').click(function() {
-    // $(resetBoard();
     $('#startButtonDiv').hide();
     $('#board').show();
     $('H2').hide();
@@ -9,7 +9,7 @@ $('#gameStartButton').click(function() {
     $('html,body').animate({
       scrollTop: ($('#board').offset().top)
     }, 500);
-    addClick();
+    resetBoard();
 });
 $('#newGameButton').click(resetBoard);
 
@@ -77,6 +77,7 @@ function cardFlip() {
 function checkForWin() {
     if (myCards.length === 6) {
         alert("You Win!")
+        $('#newGameButton').show()
     }
 }
 // The Fisher-Yates Shuffle
@@ -96,9 +97,7 @@ function shuffle(cardsArray) {
 }
 
 function resetBoard() {
-  // console.log("game reset");
   shuffle(idsArray);
-  // console.log("game shuffled");
   for(var i = 0; i < idsArray.length; i++) {
     $cards[i].id = idsArray[i];
     $cards[i].classList = ['card']
