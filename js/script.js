@@ -54,17 +54,21 @@ function cardFlip() {
     }
     if (secondClick !== "") {
         if (firstClick.classList[1] === secondClick.classList[1]) {
+          var noise2 = document.getElementById('match')
+          noise2.play()
             myCards.push(firstClick.classList[1])
             $(firstClick).unbind("click", cardFlip)
             $(secondClick).unbind("click", cardFlip)
             firstClick = ""
             secondClick = ""
         } else {
+            var noise = document.getElementById("noMatch")
             setTimeout(function() {
                 firstClick.classList = ["card"]
                 secondClick.classList = ["card"]
                 firstClick = ""
                 secondClick = ""
+                noise.play();
             }, 500)
 
 
